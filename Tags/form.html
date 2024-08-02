@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <!-- Form Etiketleri-->
+
+<form action="">    <!-- Form açma etiketi ve formun gönderilme biçimi, yerini belirlenir.-->
+    <input type="text" placeholder="kullanıcı adı" required><br> <!-- Yazı girdisi alma, sade bilgilendirme(placeholder) ve gerekli kılma(required)-->
+    <input type="password" placeholder="şifre" required><br> <!-- Şifre girdisi alma-->
+    <input type="email" placeholder="e-mail" required><br> <!--E-mail girdisi alma-->
+    A<input type="radio" name="cinsiyet" required> <!-- Sınırlı sayıda tanımlı seçenek girdisi alma -->
+    B <input type="radio" name="cinsiyet" required><br>
+    <input type="file" accept=".jpg"  required><br><br> <!-- Spesifik bir dosya türünde dosya girdisi alma-->
+    A<input type="checkbox" name="check"> <!--Bir veya birden fazla tanımlı seçenek girdisi alma-->
+    B<input type="checkbox" name="check">
+    C<input type="checkbox" name="check"><br><br>
+    <select> <!-- Açılır menü halinde bir veya birden fazla tanımlı seçenek alma girdisi.-->
+        <option value="A">A</option> <!-- Menüye bir seçenek ekleme-->
+        <option value="B">B<B/option>
+        <option value="C">C</option>
+    </select>
+    <br>
+    <textarea name="text" id="review" rows="10" cols="50"></textarea><br> <!--Çok satırlı metin giridisi alma ve boyutunu ayarlama-->
+    <input type="submit" value="Gönder"> <!-- Formu göndermek -->
+    <input type="reset" value="Temizle"> <br><br> <!-- Formdaki tüm alanları varsayılan değerlerine döndürmek-->
+
+    <button type="submit">Gönder_B</button> <!-- Formu göndermek -->
+    <button type="reset">Temizle_B</button><!-- Formdaki tüm alanları varsayılan değerlerine döndürmek-->
+</form>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

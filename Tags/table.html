@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+
+    <!-- Tablo Etiketi -->
+
+    <table border="1"> <!-- Tablonun çizgilerini belirttik -->
+        <thead> <!-- Tablonun başlığı, baş kısmını oluşturduk. -->
+            <tr>
+                <th>İSİM</th>
+                <th>SOYİSİM</th>
+                <th>TAŞ</th>
+                <th>MAAŞ</th>
+                <th>TEL-NO</th>
+            </tr>
+        </thead>
+        <tbody> <!-- Tablonun içeriğini oluşturduk -->
+            <tr>
+                <td>Furkan</td>
+                <td>Öger</td>
+                <td>24</td>
+                <td>72.000TL</td>
+                <td rowspan="4">0555 555 5555</td> <!-- Aynı bilgiye sahip olan 2 satırı birleştirdik. -->
+            </tr>
+            <tr>
+                <td>Sıla</td>
+                <td>Kasalı</td>
+                <td>21</td>
+                <td>72.000TL</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- Tablonun sonunu oluşturduk. -->
+            <tr>
+                <td colspan="5">Toplam 144.000TL</td>
+                <!-- Tablonun en alt satırının bütün sütunlarını birleştirdik.  -->
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br>
+
+    <!-- Örnek -->
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="3">Product</th>
+            </tr>
+            <tr>
+                <th>No</th>
+                <th>P. Name</th>
+                <th>P. Count</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pen</td>
+                <td rowspan="3">2</td>
+                <td>2.5$</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Book</td>
+                <td>3.5$</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Dust</td>
+                <td>1.75$</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total = 15.5$</td>
+            </tr>
+        </tfoot>
+        </tbody>
+    </table>
+</body>
+<br><hr><br>
+
+
+
+    
+</body>
+</html>

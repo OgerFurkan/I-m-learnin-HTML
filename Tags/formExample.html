@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örnek Form</title>
+</head>
+
+<body>
+
+    <form action="" id="mainForm">
+        <fieldset>
+            <legend><b>Giriş Bilgileri</b></legend>
+            <input type="text" name="uName" placeholder="Kullanıcı Adı" maxlength="10" required><br><br>
+            <input type="password" name="password" placeholder="Şifre" maxlength="10" required> <br><br>
+            <input type="email" name="email" placeholder="e-posta" required>
+    </form>
+    </fieldset>
+
+    <br><br>
+
+    <fieldset form="mainForm">
+        <legend><b>Kişisel Bilgiler</b></legend>
+        <table>
+
+            <tr>
+                <td><b>Cinsiyet</b> : Kadın<input type="radio" name="cinsiyet" required form="mainForm"> Erkek<input type="radio" name="cinsiyet" required  form="mainForm"> </td>
+            </tr>
+            <tr>
+                <th><br>Hobiler</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="hobbies" multiple size="6"  form="mainForm">
+                        <optgroup label="Spor">
+                            <option value="fball">Futbol</option>
+                            <option value="bball">Basketbol</option>
+                            <option value="vball">Voleybol</option>
+                        </optgroup>
+                        <optgroup label="Video Oyunu">
+                            <option value="cs">Counter-Strike 2</option>
+                            <option value="rdr2">Read Dead Redemption 2</option>
+                            <option value="eafc">EA SPORTS Football Club™ 25 </option>
+                        </optgroup>
+                    </select>
+                </td>
+            <tr>
+                <th>
+                    <br> Hangi dili veya dilleri biliyorsunuz?
+                </th>
+            </tr>
+            <tr>
+                <td>JS <input type="checkbox" name="js"  form="mainForm"> C#<input type="checkbox" name="cshrp"  form="mainForm"> CSS<input type="checkbox" name="CSS"  form="mainForm"></td>
+            </tr>
+            <tr>
+                <th><br>Kendinizi tanıtın:</th>
+            </tr>
+            </tr>
+        </table>
+        <textarea name="interview" required rows="10" cols="50"
+        placeholder="Buraya yazınız..."  form="mainForm"></textarea><br><br>
+        <input type="submit" formtarget="_blank" form="mainForm"> <button type="reset" form="mainForm">Temizle</button>
+    </fieldset>
+    
+</body>
+
+</html>
