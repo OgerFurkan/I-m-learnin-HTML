@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+
+<body>
+    <hr>
+
+    <!-- Ses Ekleme -->
+
+    <audio controls>
+         <!-- Ses ekleme etiketi ve kontrolleri eklemek için attribute.-->
+          
+        <source src="/Sources/Audio/Audio.mp3" type="audio/mpeg">
+        <!-- Kaynağımızı ve MIME (Multipurpose Internet Mail Extensions : internet üzerinden gönderilen dosyaların formatını belirlemek için kullanılan bir standarttır.)  type'ını veriyoruz.-->
+
+    </audio>
+
+    <br>
+
+
+    <!-- Video Ekleme -->
+
+    <video controls width="300" height="200" poster="/Sources/Picture/HTML5.jpg">
+        <!-- Video ekleme etiketi ve videonun genişlik, uzunluk, kapak fotopraflarını eklemek için attribute'lar.-->
+
+        <source src="/Sources/Video/video.mp4" type="video/mp4">
+        <!-- Kaynağımızı ve kaynağımızın MIME type'ını veriyoruz.-->
+
+    </video>
+
+    <video controls width="300" height="200" poster="/Sources/Picture/poster.jpg">
+        <source src="/Sources/Video/video_en.mp4">
+
+        <track src="/Sources/Subtitle/subtitle_en.vtt" kind="subtitles" srclang="en" label="İngilizce">
+        <!-- Videomuza alt yazı ekliyoruz.-->
+
+    </video>
+    <hr>
+
+    <!--Bitti-->
+
+</body>
+
+</html>
